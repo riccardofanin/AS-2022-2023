@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+div{
+    position: absolute;
+    top: 25vh;
+    height: 50vh;
+    width: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+img{
+    height: 25vh;
+    width: 30vh;
+    background-color: white;
+    transition: all 1s ease-in-out;
+}
+
+img:hover{
+    transform: rotate(360deg) scale(2);
+}
