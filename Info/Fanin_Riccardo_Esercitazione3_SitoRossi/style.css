@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    background-color: #7ea3dd;
+}
+
+.nav-bar{
+    background-color: #212529;
+    color: white;
+    padding: 10px;
+}
+
+.nav-bar div{
+    padding: 5px;
+    margin-left: 50px;
+}
+
+.nav-item{
+    color: #ced4da;
+    margin-left: 10px;
+}
+
+.nav-item:visited{
+    color: #ced4da;
+}
+
+.nav-item:hover{
+    color: #f8f9fa;
+}
+
+.header{
+    background-image: url("img/testarossi.jpg");
+    background-size: cover;
+}
+
+.header .row{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header img{
+    width: 12vh;
+}
+
+.header #col-1{
+    margin-left: 30vh;
+    margin-right: 10vh;
+}
+
+.header #col-2{
+    margin-right: 30vh;
+    margin-left: 10vh;
+}
+
+.title{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15vh;
+    padding-right: 10vh;
+    align-items: center;
+}
+
+.title #main-title{
+    background-color: rgba(241, 241, 241, 0.5);
+    font-size: 30px;
+}
+
+.title #sub-title{
+    background-color: rgba(241, 241, 241, 0.5);
+    font-size: 20px;
+    border-style: solid;
+    border: 10px;
+    border-color: rgb(000, 000, 000, 0.5);
+}
+
+.carousel {
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 1170px;
+    background-color: black;
+}
+
+.carousel .arrow {
+    border-radius: 50%;
+}
+
+.carousel .arrow img{
+    width: 20px;
+    height: 20px;
+}
