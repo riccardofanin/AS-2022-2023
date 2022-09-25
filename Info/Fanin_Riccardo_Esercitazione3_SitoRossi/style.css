@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+
 body{
     margin: 0;
     background-color: #7ea3dd;
+    font-family: 'Roboto', sans-serif;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
 
 .nav-bar{
     background-color: #212529;
@@ -26,6 +39,8 @@ body{
 .nav-item:hover{
     color: #f8f9fa;
 }
+
+/*  HEADER E TITOLO */
 
 .header{
     background-image: url("img/testarossi.jpg");
@@ -73,7 +88,11 @@ body{
     border-color: rgb(000, 000, 000, 0.5);
 }
 
+/*  CAROSELLO    */
+
 .carousel {
+    margin-top: 20px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     height: 500px;
@@ -88,4 +107,121 @@ body{
 .carousel .arrow img{
     width: 20px;
     height: 20px;
+}
+
+/*  CONTENUTO PRINICPALE    */
+
+.main{
+    background-color: #deeff6;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+}
+
+.main .content{
+    width: 70%;
+}
+
+.main .side-bar{
+    width: 30%;
+}
+
+/* CONTENT BACHECA  */
+
+.main .bacheca{
+    background-color: #279eb1;
+}
+
+.main .bacheca .title{
+    background-color: #385991;
+    color: white;
+    font-size: 25px;
+    margin-left: 0px;
+}
+
+.main .bacheca .links{
+    padding: 5px;
+    display: flex;
+}
+
+.main .bacheca .links a{
+    color: white;
+    margin-left: 10px;
+}
+
+.main .bacheca .links a:visited{
+    color: white;
+}
+
+.main .bacheca .links a:hover{
+    color: white;
+}
+
+.main .bacheca .avvisi{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+}
+
+.main .bacheca h1{
+    font-size: 20px;
+    color: white;
+}
+
+.main .bacheca h2{
+    font-size: 15px;
+}
+
+/*  CONTENT CIRCOLARI E NEWS    */
+
+.main .content .row{
+    display: flex;
+    background-color: white;
+}
+
+.main .content .row .title{
+    background-color: #385991;
+    color: white;
+    padding: 5px;
+}
+
+
+.main .content .row .news{
+    width: 70%;
+}
+
+.main .content .row a{
+    color: #337ab9;
+}
+
+.main .content .row .single-new{
+    padding: 8px;
+}
+
+.main .content .row .single-circolare{
+    padding: 8px;
+}
+
+.main .content .row .news p{
+    width: 70%;
+}
+
+.main .content .row .news-content{
+    display: flex;
+}
+
+.main .content .row .news img{
+    margin-top: 15px;
+    width: 70%;
+    border: 1px solid black;
+    transition: transform .2s; 
+}
+
+.main .content .row .news img:hover{
+    transform: scale(1.5);
+    border: none;
+}
+
+.main .content .row .circolari{
+    width: 30%;
 }
