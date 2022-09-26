@@ -118,6 +118,10 @@ a:hover{
     width: 1170px;
 }
 
+.main .row{
+    display: flex;
+}
+
 .main .content{
     width: 70%;
 }
@@ -224,4 +228,48 @@ a:hover{
 
 .main .content .row .circolari{
     width: 30%;
+}
+
+/*  SIDEBAR */
+
+/*  Login   */
+
+.main .side-bar .title{
+    background-color: #7fa6e8;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.main .side-bar .login{
+    background-color: #eeeeee;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 40px;
+}
+
+.main .side-bar .login .text{
+    font-size: 13px;
+    margin-left: 40%;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.main .side-bar .login input{
+    display: block;
+    width: 97%;
+}
+
+.main .side-bar .login button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.main .side-bar .login a{
+    text-align: center;
 }
