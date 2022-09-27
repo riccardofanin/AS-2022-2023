@@ -232,15 +232,18 @@ a:hover{
 
 /*  SIDEBAR */
 
+
+
 /*  Login   */
 
 .main .side-bar .title{
+    padding: 10px;
     background-color: #7fa6e8;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: white;
-    border-radius: 10%;
-    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    color: #fff;
+    text-shadow: 3px 1px 6px #000;
+    font-size: 1.2em;
+    margin: 15px 0px 5px 0px;
 }
 
 .main .side-bar .login{
@@ -273,3 +276,27 @@ a:hover{
 .main .side-bar .login a{
     text-align: center;
 }
+
+/*  Image Links */
+
+.main .side-bar .image-links{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 80px;
+}
+
+.main .side-bar .image-links ul li{
+    padding: 0;
+}
+
+.main .side-bar .image-links a{
+    margin-top: 100px;
+}
+
+.main .side-bar .image-links img{
+    width: 320px;
+    position: absolute;
+    margin: auto;
+    transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
