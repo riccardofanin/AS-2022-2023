@@ -300,3 +300,37 @@ a:hover{
     transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+/*  servizi-indirizzi */
+
+.servizi-indirizzi{
+    background-color: #deeff6;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+}
+
+.servizi-indirizzi .title{
+    font-size: 1.4em;
+    background-color: #385991;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px 5px 20px 0px;
+    box-shadow: 2px 2px 3px #808080;
+}
+
+.servizi-indirizzi .row{
+    display: flex;
+}
+
+.servizi-indirizzi .row .text{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.servizi-indirizzi img{
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
