@@ -115,6 +115,7 @@ a:hover{
     background-color: #deeff6;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0px;
     width: 1170px;
 }
 
@@ -304,6 +305,7 @@ a:hover{
 
 .servizi-indirizzi{
     background-color: #deeff6;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     width: 1170px;
@@ -334,3 +336,61 @@ a:hover{
     margin-right: 20px;
     margin-top: 20px;
 }
+
+/* PAGE-FOOTER */
+
+.page-footer{
+    background-color: #3b5991;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+}
+
+.page-footer h2{
+    color: #349aaa;
+    text-align: center;
+    border-bottom: 2px solid #349aaa;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.page-footer .row{
+    display: flex;
+}
+
+.page-footer .row .col{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-footer .row .col .sub-col{
+    width: 292px;
+    color: #349aaa;
+
+}
+
+.page-footer .row .col .sub-col h2{
+    font-size: 18px;
+    font-style: bold;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.page-footer .row .col .sub-col hr{
+    margin-top: 0px;
+    border-color: #349aaa;
+}
+
+.page-footer .row .col .sub-col a{
+    color: #bcd5d2;
+    font-size: 15px;
+}
+
+.page-footer .row .col .sub-col a:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
