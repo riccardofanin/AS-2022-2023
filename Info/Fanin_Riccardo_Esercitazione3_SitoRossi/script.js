@@ -30,11 +30,14 @@ function change_radio(btn_id){
 }
 
 function timer_foto() {
+    document.getElementById(prec_id).checked = false; 
+
     if (++carousel_position >= img.length)
         carousel_position = 0;
 
     document.getElementById("img-carousel").src = img[carousel_position];
     document.getElementById("radio-"+carousel_position).checked = true; 
+    prec_id = "radio-"+carousel_position;
 }
 
 setInterval(timer_foto, 5000);
