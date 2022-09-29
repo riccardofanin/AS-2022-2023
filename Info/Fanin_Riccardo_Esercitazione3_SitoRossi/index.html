@@ -40,15 +40,18 @@
     <!--Carosello immagini-->
 
     <div class="carousel">
-        <button class="arrow" onclick="change_left()"><img src="img/left.png"></button>
+        <button class="arrow" id="arr-left" onclick="change_left()"><img src="img/left.png"></button>
         <img id="img-carousel" src="img/carousel-img/panoramica-istituto.jpg">
-        <button class="arrow" onclick="change_right()"><img src="img/right.png"></button>
+        <button class="arrow" id="arr-right" onclick="change_right()"><img src="img/right.png"></button>
+        <div class="text-content">
+
+        </div>
         <div class="carousel-btn">
-            <input type="radio" id="radio-0" onclick="">
-            <input type="radio" id="radio-1" onclick="">
-            <input type="radio" id="radio-2" onclick="">
-            <input type="radio" id="radio-3" onclick="">
-            <input type="radio" id="radio-4" onclick="">
+            <input type="radio" id="radio-0" onclick="change_radio(this)">
+            <input type="radio" id="radio-1" onclick="change_radio(this)">
+            <input type="radio" id="radio-2" onclick="change_radio(this)">
+            <input type="radio" id="radio-3" onclick="change_radio(this)">
+            <input type="radio" id="radio-4" onclick="change_radio(this)">
         </div>
     </div>
 
@@ -275,6 +278,60 @@
                     <button>Log in</button>
                     <a href="">Password persa...</a>
                 </div>
+
+                <div class="calendar">
+                    <div class="title">Calendario</div>
+                    <div class="month">
+                      <a>&#10094;</a>
+                      <div class="date">
+                        <p>Settembre 2022</p>
+                      </div>
+                      <a>&#10095;</a>
+                    </div>
+                      <div class="weekdays">
+                        <div>L</div>
+                        <div>M</div>
+                        <div>M</div>
+                        <div>G</div>
+                        <div>V</div>
+                        <div>S</div>
+                        <div>D</div>
+                      </div>
+            
+                      <div class="days">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div>12</div>
+                        <div>13</div>
+                        <div>14</div>
+                        <div>15</div>
+                        <div>16</div>
+                        <div>17</div>
+                        <div>18</div>
+                        <div>19</div>
+                        <div>20</div>
+                        <div>21</div>
+                        <div>22</div>
+                        <div>23</div>
+                        <div>24</div>
+                        <div>25</div>
+                        <div>26</div>
+                        <div>27</div>
+                        <div>28</div>
+                        <div>29</div>
+                        <div>30</div>
+                      </div>
+                  </div>
+
 
                 <div class="image-links">
                     <div class="title">Aziende Partner</div>
