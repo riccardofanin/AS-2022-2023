@@ -8,8 +8,12 @@
 </head>
 
 
-<body>
+<body style=" background-color: rgb(<?php echo $_POST['red']; ?>,<?php echo $_POST['red']; ?>,<?php echo $_POST['red']; ?>)">
     
+
+
+    <div style="text-align:center;">
+
     <?php
 
         $red = $_POST['red'];
@@ -30,23 +34,10 @@
 
         $color = "#" . $redHex . $greenHex . $blueHex;
 
-        echo "
-            <h1>$color</h1>
-
-            <style>
-                body{
-                    background-color: rgb($red, $green, $blue);
-                }
-
-                h1{
-                    padding-top: 23%;
-                    padding-bottom: 23%;
-                    text-align: center;
-                }
-            </style>
-            ";
-
+        echo $color;
     ?>
+
+    </div>
 
 </body>
 
