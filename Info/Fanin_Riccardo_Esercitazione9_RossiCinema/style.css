@@ -1,0 +1,16 @@
+
+.seat {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 2px;
+}
+
+.seat.selected {
+background-color: #0074D9;
+}
+
+.seat.unavailable {
+background-color: #ccc;
+}
