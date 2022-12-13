@@ -1,3 +1,8 @@
+body
+{
+    background-color: #0a0908;
+    color: white;
+}
 
 .seat {
     width: 30px;
@@ -8,7 +13,7 @@
 }
 
 .seat.selected {
-background-color: #0074D9;
+background-color: #fca311;
 }
 
 .seat.unavailable {

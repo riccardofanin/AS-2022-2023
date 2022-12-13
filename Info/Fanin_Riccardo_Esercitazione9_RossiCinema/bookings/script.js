@@ -12,13 +12,23 @@ function generateSeats()
         document.getElementById('seating-chart').innerHTML += "</div>";
     }
 
-    count = 1
+    var count = 1;
     Array.from(document.getElementsByClassName('seat')).forEach(element => {
-        element.innerHTML = count++;
+        if(count < 10)
+        {
+            element.innerHTML = '0' + count++;
+        }
+        else
+        {
+            element.innerHTML = count++;
+        }
     });
+
+
 }
 
 generateSeats();
+
 
 seatingChart.addEventListener('click', function(event) {
     if (event.target.classList.contains('seat')) {
@@ -46,13 +56,13 @@ seatingChart.addEventListener('click', function(event) {
     console.log(seatSelected);
 });
 
-
-
-$('button').click(function() {
+$('#sas').click(function() {
     $.ajax({
         type: "POST",
-        url: "server/prenotazioni.php",
-        data: { seat: seatSelected }
+        url: "prenotazioni.php",
+        data: { 
+            seat: seatSelected
+        }
     }).done(function( msg ) {
         alert( "Data Saved: " + msg );
     });

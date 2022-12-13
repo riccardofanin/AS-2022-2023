@@ -1,6 +1,6 @@
 <?php
 
-require_once 'db_connect.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/db_connect.php';
 
 function login_user()
 {
@@ -31,17 +31,19 @@ function login_user()
         $_SESSION['userID'] = $result['id'];
         $_SESSION['email'] = $result['email'];
         http_response_code(200);
-        echo 'User successfully logged in';
+        ob_start();
+        header('Location: ../home/home.php');
         exit();
     }
     else{
         http_response_code(400);
+        ob_start();
         echo 'Wrong password';
         exit();
     }
 }
 
-if(isset($_POST["submit"]))
+if($_POST['submit'])
 {
     login_user();
 }

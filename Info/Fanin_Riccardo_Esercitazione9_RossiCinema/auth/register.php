@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 require_once 'db_connect.php';
 
 function register_user()
@@ -16,11 +16,10 @@ function register_user()
     
     if($result){
         http_response_code(201);
-        echo 'User successfully registered';
         $_SESSION['userID'] = $db->lastInsertId();
         $_SESSION['email'] = $email;
-        exit();
-    }
+        
+    }   
     else{
         http_response_code(400);
         echo 'failed to register';
@@ -29,5 +28,7 @@ function register_user()
 
 if(isset($_POST["submit"]))
 {
-    register_user();
+    register_user();    
+
+    exit;
 }

@@ -1,23 +1,18 @@
 <?php
 
-require_once 'server/films.php';
+require_once 'prenotazioni.php';
 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-
-    <title>The Rossi Cinema</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">    
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-
     <!--- NAVBAR --->
 
     <nav class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-black">
@@ -38,10 +33,34 @@ require_once 'server/films.php';
         </div>
     </nav>
 
+    
 
-    <!--- Film disponibili --->
+	<div class="flex items-center">
+		<div class="mx-auto">
+            <div class='flex flex-col items-center mx-auto my-10 border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-black dark:border-black dark:bg-black dark:hover:bg-black''> 
+                <?php echo film_info(); ?>
+            </div>
 
-    <?php    generate_card(); ?>
+			<h5 class='mb-10 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>SELEZIONA I POSTI CHE VUOI PRENOTARE</h5>
 
+			<h4 class='mb-10 text-1xl font-bold tracking-tight text-gray-900 dark:text-white'>POSTI SELEZIONATI: </h4>
+			<div id="seat-list"></div>
+
+
+                <button id='sas' name='submit' value='true' class="mx-auto px-4 py-2 rounded-full text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:shadow-outline">
+                    Prenota il tuo biglietto
+                </button>
+		</div>
+		<div id="seating-chart" class="mx-auto">
+			<img src="https://www.thespacecinema.it/assets/images/booking/screen-small.png" class="ml-2 my-9">
+
+		</div>
+	</div>
+	
+
+
+	<script src="script.js"></script>
 </body>
 </html>
+
+
