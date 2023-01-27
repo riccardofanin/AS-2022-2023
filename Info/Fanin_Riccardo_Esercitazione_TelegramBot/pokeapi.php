@@ -50,7 +50,12 @@ class Pokeapi
         $data = file_get_contents($final_url);
         $json = json_decode($data);
 
-        $damage = $json->damage_relations;
+        // double_damage_from
+        // double_damage_to
+        // half_damage_from
+        // half_damage_to
+        // no_damage_from
+        // no_damage_to
 
         $message = [
             'img' => 'https://cnt-02.content-eu.drive.amazonaws.com/cdproxy/templink/I40B389bMN21jtwpnxWbTEEFCxYiyU4_c5046GHsLeoeJxFPc?viewBox=1406%2C937',

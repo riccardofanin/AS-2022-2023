@@ -43,4 +43,10 @@ class Database{
         //var_dump($users);
     }
 
+    function countCommands($chatId)
+    {
+        $counter = Capsule::table('users')->select('*')->where('chat_id', '=', $chatId)->count();
+        return $counter;
+    }
+
 }

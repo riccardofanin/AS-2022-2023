@@ -44,6 +44,15 @@ class MessageHandler
                 ]);
                 return 0;
 
+            case '/commandCount':
+                $text = 'I comandi inseriti in questa chat sono: ' . $this->db->countCommands($chatId);
+                $response = $client->sendMessage([
+                    'chat_id' => $chatId, 
+                    'text' => $text, 
+                    'reply_markup' => $reply_markup
+                ]);
+                return 0;
+
             case '/pokedex':
                 $command = $message;
                 $text = [
