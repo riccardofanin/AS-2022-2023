@@ -1,16 +1,15 @@
 <?php
 require 'vendor/autoload.php';
-require 'pokeapi.php';
+require_once('messageHandler.php');
+//require 'database/databaseHandler.php';
 use Telegram\Bot\Api;
 
 // creazione dell'oggetto client
 $client = new Api('5834320416:AAG3G8fmTZMGj_7JmmTrUQQcZ4saxEYEnRE');
-
-$pokeapi = new Pokeapi();
-
+$message_handler = new MessageHandler();
 /* per l'attivazione del long polling memorizziamo
 l'id dell'ultimo update elaborato */
-$client->addCommand(Telegram\Bot\Commands\HelpCommand::class);
+
 $last_update_id=0;
 while(true){
     // leggiamo gli ultimi update ottenuti
@@ -23,10 +22,7 @@ while(true){
 		$message=$r->getMessage();
 		$chatId=$message->getChat()->getId();
 		$text=$message->getText();
-        $response = $client->sendMessage([
-            'chat_id' => $chatId,
-            'text' => $pokeapi->pokedex($text)
-        ]);
+        $message_handler->handle($client,$text, $chatId);
 	}
 }
 ?>

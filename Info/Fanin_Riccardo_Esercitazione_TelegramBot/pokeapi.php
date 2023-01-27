@@ -21,7 +21,7 @@ class Pokeapi
         return $message;
     }
 
-    function type($type)
+    function types($type)
     {
         $final_url = "https://pokeapi.co/api/v2/type/" . $type;
         $data = file_get_contents($final_url);
