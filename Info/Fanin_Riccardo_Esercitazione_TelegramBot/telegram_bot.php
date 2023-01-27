@@ -1,7 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-require_once('messageHandler.php');
-//require 'database/databaseHandler.php';
+require_once('MessageHandler.php');
 use Telegram\Bot\Api;
 
 // creazione dell'oggetto client
